@@ -4,7 +4,7 @@ namespace TDSM.Data.Lib.Models
 {
     public class TaxiTripModel
     {
-        public string ReciepeNumber { get; set; }
+        public string RecieptNumber { get; set; }
         public TaxiTripPaymentTypeModel PaymentType  { get; set; }
         public TaxiTripTypeModel TripType { get; set; }
         public DateTime StartDate { get; set; }
@@ -16,12 +16,12 @@ namespace TDSM.Data.Lib.Models
         public decimal TripPrice { get; set; }
         public int NumberOfPax { get; set; }
 
-        public TaxiTripModel(string reciepeNumber, TaxiTripPaymentTypeModel paymentType,
+        public TaxiTripModel(string recieptNumber, TaxiTripPaymentTypeModel paymentType,
             TaxiTripTypeModel tripType, DateTime startDate, DateTime endDate,
             string fromAddress, string toAddress, double timeUsed, double distanceKm,
             decimal tripPrice, int numberOfPax)
         {
-            ReciepeNumber = reciepeNumber;
+            RecieptNumber = recieptNumber;
             PaymentType = paymentType;
             TripType = tripType;
             StartDate = startDate;
