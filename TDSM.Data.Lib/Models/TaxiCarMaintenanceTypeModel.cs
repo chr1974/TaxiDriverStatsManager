@@ -9,6 +9,6 @@
         /// Descriptive name of the TypeModel
         /// examples: Carwash, Car Care, Tire Change, Interval Service etc.
         /// </summary>
-        public string name { get; set; }
+        public string Name { get; set; }
     }
 }
