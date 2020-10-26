@@ -12,8 +12,10 @@ api, and app to phone and wpf desktop app to windows
 
 This is a project i have started to learn C# watching youtube videos.
 
-Some great content makers i use to study is
-- IamTimCorey
-- FoxLearn
-- Mosh Hamedani
+**Some great content makers i use to study is**
+
+- [IamTimCorey](https://www.youtube.com/channel/UC-ptWR16ITQyYOglXyQmpzw)
+- [FoxLearn](https://www.youtube.com/channel/UC8inCnD25Es0VLokfmhko5g)
+- [Mosh Hamedani](https://www.youtube.com/user/programmingwithmosh)
+
 and a few more i dont remember at this moment :)
