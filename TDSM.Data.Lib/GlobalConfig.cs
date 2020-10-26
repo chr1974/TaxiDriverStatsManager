@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Text;
 using TDSM.Data.Lib.DataAccess;
 
@@ -12,31 +13,35 @@ namespace TDSM.Data.Lib
     public static class GlobalConfig
     {
         /// <summary>
-        /// List of all connections
+        /// connection
         /// </summary>
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
-
+        public static IDataConnection Connection { get; private set; }
 
         /// <summary>
         /// Initialize the connections, set to true to use or false not to use
         /// </summary>
         /// <param name="database"></param>
         /// <param name="textfiles"></param>
-        public static void InitializeConnections(bool database, bool textfiles)
+        public static void InitializeConnections(DatabaseType db = DatabaseType.Sql)
         {
-            if (database)
+            if (db == DatabaseType.Sql)
             {
                 // TODO - Set up the SQL Connector properly
                 SqlConnector sql = new SqlConnector();
-                Connections.Add(sql);
+                Connection = sql;
             }
 
-            if (textfiles)
+            else if (db == DatabaseType.TextFile)
             {
                 // TODO - Create the Text Connection
                 TextConnector text = new TextConnector();
-                Connections.Add(text);
+                Connection = text;
             }
+        }
+
+        public static string GetConnectionString(string name)
+        {
+            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
     }
 }

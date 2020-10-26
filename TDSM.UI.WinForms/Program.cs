@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TDSM.Data.Lib;
 
 namespace TDSM.UI.WinForms
 {
@@ -16,7 +17,11 @@ namespace TDSM.UI.WinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            //Initialize the database connection
+            GlobalConfig.InitializeConnections(DatabaseType.Sql);
+
+            Application.Run(new MainForm());
         }
     }
 }
