@@ -7,6 +7,10 @@ namespace TDSM.Data.Lib.Models
     /// </summary>
     public class TaxiTripModel
     {
+        /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
 
         /// <summary>
         /// The recieptNumber on the trip reciept

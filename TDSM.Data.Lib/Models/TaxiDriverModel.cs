@@ -6,6 +6,11 @@
     public class TaxiDriverModel
     {
         /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// Drivers firstname
         /// </summary>
         public string FirstName { get; set; }

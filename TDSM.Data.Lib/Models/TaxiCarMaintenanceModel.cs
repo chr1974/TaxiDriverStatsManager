@@ -9,6 +9,11 @@ namespace TDSM.Data.Lib.Models
     public class TaxiCarMaintenanceModel
     {
         /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// The date and time of the maintenence
         /// </summary>
         public DateTime Date { get; set; }

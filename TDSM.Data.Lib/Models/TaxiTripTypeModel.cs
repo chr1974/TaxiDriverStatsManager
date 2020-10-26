@@ -7,6 +7,11 @@
     public class TaxiTripTypeModel
     {
         /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// Name of the type
         /// eg. Spot Trip, Ordered Trip, Sightseeing Trip, School Trip, Patients Trip etc..
         /// </summary>

@@ -7,6 +7,11 @@
     public class TaxiTripPaymentTypeModel
     {
         /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// Name of payment type
         /// eg. Visa, Mastercard, American Express, Cash, Credit Voucher etc...
         /// </summary>

@@ -9,6 +9,11 @@ namespace TDSM.Data.Lib.Models
     public class TaxiCarModel
     {
         /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// The Brand of the car eg. Toyota, Mercedes, Ford etc.
         /// </summary>
         public string Brand { get; set; }

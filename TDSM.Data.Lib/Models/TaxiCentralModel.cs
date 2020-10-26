@@ -12,6 +12,11 @@ namespace TDSM.Data.Lib.Models
     public class TaxiCentralModel
     {
         /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// The name of the taxi central
         /// 
         /// </summary>

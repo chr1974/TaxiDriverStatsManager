@@ -4,11 +4,17 @@ using System.Collections.Generic;
 
 namespace TDSM.Data.Lib.Models
 {
+
     /// <summary>
     /// Represents a TaxiShift
     /// </summary>
     public class TaxiShiftModel
     {
+        /// <summary>
+        /// primary id
+        /// </summary>
+        public int Id { get; set; }
+
         /// <summary>
         /// the shift number on the shift note
         /// </summary>

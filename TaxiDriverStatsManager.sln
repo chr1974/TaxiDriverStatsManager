@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSM.Data.Lib", "TDSM.Data.Lib\TDSM.Data.Lib.csproj", "{F21A19EB-EE89-4871-8DA1-55EED88E3EBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDSM.Data.Lib", "TDSM.Data.Lib\TDSM.Data.Lib.csproj", "{F21A19EB-EE89-4871-8DA1-55EED88E3EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSM.UI.WinForms", "TDSM.UI.WinForms\TDSM.UI.WinForms.csproj", "{F03FB38E-8068-4597-85DD-56A48F9B7371}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F21A19EB-EE89-4871-8DA1-55EED88E3EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F21A19EB-EE89-4871-8DA1-55EED88E3EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F21A19EB-EE89-4871-8DA1-55EED88E3EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03FB38E-8068-4597-85DD-56A48F9B7371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03FB38E-8068-4597-85DD-56A48F9B7371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03FB38E-8068-4597-85DD-56A48F9B7371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03FB38E-8068-4597-85DD-56A48F9B7371}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
